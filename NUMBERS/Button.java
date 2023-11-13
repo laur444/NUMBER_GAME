@@ -8,21 +8,91 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Button extends Actor
 {
-    private int x;
-    private int y;
     private String scene;
     World currentWorld;
+    private int x;
+    private int y; 
     
+    //empty default constructor
     public Button(){
         
     }
     
-    public Button(int x, int y, String scene, String image){
-        this.x = x;
-        this.y = y;
+    // value constructor that initializes the button
+    public Button(String scene, String image){
         this.scene = scene;
         GreenfootImage button = new GreenfootImage(image);
         setImage(button);
+    }
+    
+    // decodes the scene keyword and determines which goTo method to use
+    public void decodeScene(){
+        if (Greenfoot.mouseClicked(this)){
+            if (scene == "start"){
+                getWorld().setBackground("fingerprint.jpg");
+                GameRunner.goToStart();
+            }
+            else if (scene == "inst"){
+                getWorld().setBackground("fingerprint.jpg");
+                GameRunner.goToInstructions();
+            }
+            else if (scene == "Mult-WorldSelect"){
+                getWorld().setBackground("fingerprint.jpg");
+                GameRunner.goToMultWorldSelect();
+            }
+            else if (scene == "Div-WorldSelect"){
+                getWorld().setBackground("fingerprint.jpg");
+                GameRunner.goToDivWorldSelect();
+            }
+            else if (scene == "Mult-World1menu"){
+                getWorld().setBackground("fingerprint.jpg");
+                GameRunner.goToWorldOneMultMenu();
+            }
+            else if (scene == "Mult-World1levelOne"){
+                getWorld().setBackground("brick.jpg");
+                GameRunner.goToMultWorldOneLevelOne();
+            }
+            else if (scene == "Mult-World1levelTwo"){
+                getWorld().setBackground("brick.jpg");
+                GameRunner.goToMultWorldOneLevelTwo();
+            }
+            else if (scene == "Mult-World1levelThree"){
+                getWorld().setBackground("brick.jpg");
+                GameRunner.goToMultWorldOneLevelThree();
+            }
+            else if (scene == "Mult-World1levelFour"){
+                getWorld().setBackground("brick.jpg");
+                GameRunner.goToMultWorldOneLevelFour();
+            }
+            else if (scene == "Mult-World1levelFive"){
+                getWorld().setBackground("brick.jpg");
+                GameRunner.goToMultWorldOneLevelFive();
+            }
+            else if (scene == "Div-World1menu"){
+                getWorld().setBackground("fingerprint.jpg");
+                GameRunner.goToWorldOneDivMenu();
+            }
+            else if (scene == "Div-World1levelOne"){
+                getWorld().setBackground("brick.jpg");
+                GameRunner.goToDivWorldOneLevelOne();
+            }
+            else if (scene == "Div-World1levelTwo"){
+                getWorld().setBackground("brick.jpg");
+                GameRunner.goToDivWorldOneLevelTwo();
+            }
+            else if (scene == "Div-World1levelThree"){
+                getWorld().setBackground("brick.jpg");
+                GameRunner.goToDivWorldOneLevelThree();
+            }
+            else if (scene == "Div-World1levelFour"){
+                getWorld().setBackground("brick.jpg");
+                GameRunner.goToDivWorldOneLevelFour();
+            }
+            else if (scene == "Div-World1levelFive"){
+                getWorld().setBackground("brick.jpg");
+                GameRunner.goToDivWorldOneLevelFive();
+            }
+        }
     }
     
     /**
@@ -31,29 +101,7 @@ public class Button extends Actor
      */
     public void act()
     {
-        if (Greenfoot.mouseClicked(this)){
-            if (scene == "Mult-menu"){
-                getWorld().setBackground("fingerprint.jpg");
-                GameRunner.goToMultMenu();
-            }
-            else if (scene == "Mult-levelOne"){
-                getWorld().setBackground("brick.jpg");
-                GameRunner.goToMultLevelOne();
-            }
-            else if (scene == "start"){
-                getWorld().setBackground("fingerprint.jpg");
-                GameRunner.goToStart();
-            }
-            else if (scene == "Div-menu"){
-                getWorld().setBackground("fingerprint.jpg");
-                GameRunner.goToDivMenu();
-            }
-            else if (scene == "Div-levelOne"){
-                getWorld().setBackground("brick.jpg");
-                GameRunner.goToDivLevelOne();
-            }
-        }
-            
+        decodeScene();
         // Add your action code here.
     }
     

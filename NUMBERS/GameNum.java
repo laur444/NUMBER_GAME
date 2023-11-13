@@ -9,22 +9,23 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 public class GameNum extends Actor
 {
-    int x;
-    int y;
+    private int x;
+    private int y;
     int num;
     String stringNum;
     static int clickCounter = 0;
 
-    
+    // initilizes the variables and calls setNum
     public GameNum(int x, int y, int num){
+        this.num = num;
         this.x = x;
         this.y = y;
-        this.num = num;
         stringNum = String.valueOf(this.num);
         
         setNum();
     }
     
+    // sets the image to display the value of the GameNum object
     public void setNum(){
         GreenfootImage numBox = new GreenfootImage("Wall.jpg");
         numBox.setColor(Color.WHITE);
@@ -32,14 +33,8 @@ public class GameNum extends Actor
         setImage(numBox);
     }
     
-    
-    
-    /**
-     * Act - do whatever the gameNum wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    public void act()
-    {
+    // determines game mode and stores users answers
+    public void numStart(){
         if (GameRunner.gameStarted){
             if (GameRunner.gameType == "mult"){
                 if (Greenfoot.mouseClicked(this) && clickCounter <= 1){
@@ -54,7 +49,7 @@ public class GameNum extends Actor
                 else if (clickCounter >= 2 && GameRunner.gameProduct != GameRunner.winCondition){
                 GameRunner.gameStop();
                 // if statement for operator 
-                GameRunner.goToMultMenu();
+                GameRunner.goToWorldOneMultMenu();
             }
             }
             else if (GameRunner.gameType == "div"){
@@ -74,10 +69,19 @@ public class GameNum extends Actor
             }
                 else if (clickCounter >= 2 && GameRunner.gameQuotient != GameRunner.winCondition){
                     GameRunner.gameStop();
-                    GameRunner.goToDivMenu();
+                    GameRunner.goToWorldOneDivMenu();
             }
             }
         }
+    }
+    
+    /**
+     * Act - do whatever the gameNum wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
+     */
+    public void act()
+    {
+        numStart();
     }
     }
 
