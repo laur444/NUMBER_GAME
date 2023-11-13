@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=TextBox
+comment0.text=\n\ Write\ a\ description\ of\ class\ QuestionBar\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=TextBox()
+comment2.params=key
+comment2.target=TextBox(java.lang.String)
+comment3.params=
+comment3.target=void\ setBar()
+comment4.params=
+comment4.target=void\ act()
+comment4.text=\n\ Act\ -\ do\ whatever\ the\ QuestionBar\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
+numComments=5

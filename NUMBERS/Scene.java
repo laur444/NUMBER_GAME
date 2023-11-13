@@ -17,7 +17,7 @@ public class Scene extends World
     public Scene()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(750, 550, 1); 
+        super(750, 650, 1); 
         prepare();
     }
     
@@ -29,18 +29,11 @@ public class Scene extends World
     private void prepare()
     {
         GameNum.clickCounter = 0;
-        int multButtonX = 200;
-        int ButtonY = 270;
-        int divButtonX = 550;
         GameRunner gameRunner = new GameRunner();
         addObject(gameRunner, -100, -100);
         currentWorld = gameRunner.getWorld();
         
-        Button multPlayButton = new Button(multButtonX, ButtonY, "Mult-menu", "playButton.png");
-        addObject(multPlayButton, multButtonX, ButtonY);
-        
-        Button divPlayButton = new Button(divButtonX, ButtonY, "Div-menu", "playButton.png");
-        addObject(divPlayButton, divButtonX, ButtonY);
+        GameRunner.goToStart();
     }
     
 }
