@@ -20,19 +20,31 @@ public class TextBox extends Actor
     // value constructor that creates the instruction screen
     public TextBox(String key){
         if (key == "inst"){
-            GreenfootImage instScreene = new GreenfootImage(700, 450);
-            instScreene.setColor(Color.BLACK);
-            instScreene.fillRect(0, 0, 700, 450);
-            instScreene.setColor(Color.WHITE);
-            instScreene.drawString(
+            GreenfootImage instScreen = new GreenfootImage(700, 450);
+            instScreen.setColor(Color.BLACK);
+            instScreen.fillRect(0, 0, 700, 450);
+            instScreen.setColor(Color.WHITE);
+            instScreen.drawString(
             "AHHJKHJKHJKHJKHJKHJKHKHJKHJKHJKHJKKJHKJHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", 10, 25);
-            setImage(instScreene);
+            setImage(instScreen);
         }
-        if (key == "win-screen"){
-            
+        if (key == "win"){
+            GreenfootImage winScreen = new GreenfootImage(600,500);
+            winScreen.setColor(Color.BLACK);
+            winScreen.fillRect(0, 0, 600, 500);
+            winScreen.setColor(Color.YELLOW);
+            winScreen.drawString("Winner", 10, 25);
+            winScreen.drawString(Integer.toString(GameRunner.tryCounter + 1) + "/3", 10, 35);
+            setImage(winScreen);
         }
-        if (key == "loss-screen"){
+        if (key == "loss"){
+            GreenfootImage lossScreen = new GreenfootImage(600,500);
+            lossScreen.setColor(Color.BLACK);
+            lossScreen.fillRect(0, 0, 600, 500);
+            lossScreen.setColor(Color.RED);
+            lossScreen.drawString("You lost try again!", 10, 25);
             
+            setImage(lossScreen);
         }
     }
     

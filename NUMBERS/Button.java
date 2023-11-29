@@ -29,68 +29,264 @@ public class Button extends Actor
     public void decodeScene(){
         if (Greenfoot.mouseClicked(this)){
             if (scene == "start"){
-                getWorld().setBackground("fingerprint.jpg");
                 GameRunner.goToStart();
             }
+            
             else if (scene == "inst"){
-                getWorld().setBackground("fingerprint.jpg");
                 GameRunner.goToInstructions();
             }
+            
             else if (scene == "Mult-WorldSelect"){
-                getWorld().setBackground("fingerprint.jpg");
                 GameRunner.goToMultWorldSelect();
             }
             else if (scene == "Div-WorldSelect"){
-                getWorld().setBackground("fingerprint.jpg");
                 GameRunner.goToDivWorldSelect();
             }
+            
             else if (scene == "Mult-World1menu"){
-                getWorld().setBackground("fingerprint.jpg");
                 GameRunner.goToWorldOneMultMenu();
             }
             else if (scene == "Mult-World1levelOne"){
-                getWorld().setBackground("brick.jpg");
                 GameRunner.goToMultWorldOneLevelOne();
             }
             else if (scene == "Mult-World1levelTwo"){
-                getWorld().setBackground("brick.jpg");
                 GameRunner.goToMultWorldOneLevelTwo();
             }
             else if (scene == "Mult-World1levelThree"){
-                getWorld().setBackground("brick.jpg");
                 GameRunner.goToMultWorldOneLevelThree();
             }
             else if (scene == "Mult-World1levelFour"){
-                getWorld().setBackground("brick.jpg");
                 GameRunner.goToMultWorldOneLevelFour();
             }
             else if (scene == "Mult-World1levelFive"){
-                getWorld().setBackground("brick.jpg");
                 GameRunner.goToMultWorldOneLevelFive();
             }
+            else if (scene == "Mult-World1levelSix"){
+                GameRunner.goToMultWorldOneLevelSix();
+            }
+            else if (scene == "Mult-World1levelSeven"){
+                GameRunner.goToMultWorldOneLevelSeven();
+            }
+            else if (scene == "Mult-World1levelEight"){
+                GameRunner.goToMultWorldOneLevelEight();
+            }
+            else if (scene == "Mult-World1levelNine"){
+                GameRunner.goToMultWorldOneLevelNine();
+            }
+            else if (scene == "Mult-World1levelTen"){
+                GameRunner.goToMultWorldOneLevelTen();
+            }
+            else if (scene == "Mult-World1levelEleven"){
+                GameRunner.goToMultWorldOneLevelEleven();
+            }
+            else if (scene == "Mult-World1levelTwelve"){
+                GameRunner.goToMultWorldOneLevelTwelve();
+            }
+            
+            else if (scene == "Mult-World2menu"){
+                GameRunner.goToWorldTwoMultMenu();
+            }
+            else if (scene == "Mult-World2levelOne"){
+                GameRunner.goToMultWorldTwoLevelOne();
+            }
+            else if (scene == "Mult-World2levelTwo"){
+                GameRunner.goToMultWorldTwoLevelTwo();
+            }
+            else if (scene == "Mult-World2levelThree"){
+                GameRunner.goToMultWorldTwoLevelThree();
+            }
+            else if (scene == "Mult-World2levelFour"){
+                GameRunner.goToMultWorldTwoLevelFour();
+            }
+            else if (scene == "Mult-World2levelFive"){
+                GameRunner.goToMultWorldTwoLevelFive();
+            }
+            else if (scene == "Mult-World2levelSix"){
+                GameRunner.goToMultWorldTwoLevelSix();
+            }
+            else if (scene == "Mult-World2levelSeven"){
+                GameRunner.goToMultWorldTwoLevelSeven();
+            }
+            else if (scene == "Mult-World2levelEight"){
+                GameRunner.goToMultWorldTwoLevelEight();
+            }
+            else if (scene == "Mult-World2levelNine"){
+                GameRunner.goToMultWorldTwoLevelNine();
+            }
+            else if (scene == "Mult-World2levelTen"){
+                GameRunner.goToMultWorldTwoLevelTen();
+            }
+            else if (scene == "Mult-World2levelEleven"){
+                GameRunner.goToMultWorldTwoLevelEleven();
+            }
+            else if (scene == "Mult-World2levelTwelve"){
+                GameRunner.goToMultWorldTwoLevelTwelve();
+            }
+            
+            else if (scene == "Mult-World3menu"){
+                GameRunner.goToWorldThreeMultMenu();
+            }
+            else if (scene == "Mult-World3levelOne"){
+                GameRunner.goToMultWorldThreeLevelOne();
+            }
+            else if (scene == "Mult-World3levelTwo"){
+                GameRunner.goToMultWorldThreeLevelTwo();
+            }
+            else if (scene == "Mult-World3levelThree"){
+                GameRunner.goToMultWorldThreeLevelThree();
+            }
+            else if (scene == "Mult-World3levelFour"){
+                GameRunner.goToMultWorldThreeLevelFour();
+            }
+            else if (scene == "Mult-World3levelFive"){
+                GameRunner.goToMultWorldThreeLevelFive();
+            }
+            else if (scene == "Mult-World3levelSix"){
+                GameRunner.goToMultWorldThreeLevelSix();
+            }
+            else if (scene == "Mult-World3levelSeven"){
+                GameRunner.goToMultWorldThreeLevelSeven();
+            }
+            else if (scene == "Mult-World3levelEight"){
+                GameRunner.goToMultWorldThreeLevelEight();
+            }
+            else if (scene == "Mult-World3levelNine"){
+                GameRunner.goToMultWorldThreeLevelNine();
+            }
+            else if (scene == "Mult-World3levelTen"){
+                GameRunner.goToMultWorldThreeLevelTen();
+            }
+            else if (scene == "Mult-World3levelEleven"){
+                GameRunner.goToMultWorldThreeLevelEleven();
+            }
+            else if (scene == "Mult-World3levelTwelve"){
+                GameRunner.goToMultWorldThreeLevelTwelve();
+            }
+            
             else if (scene == "Div-World1menu"){
-                getWorld().setBackground("fingerprint.jpg");
                 GameRunner.goToWorldOneDivMenu();
             }
             else if (scene == "Div-World1levelOne"){
-                getWorld().setBackground("brick.jpg");
                 GameRunner.goToDivWorldOneLevelOne();
             }
             else if (scene == "Div-World1levelTwo"){
-                getWorld().setBackground("brick.jpg");
                 GameRunner.goToDivWorldOneLevelTwo();
             }
             else if (scene == "Div-World1levelThree"){
-                getWorld().setBackground("brick.jpg");
                 GameRunner.goToDivWorldOneLevelThree();
             }
             else if (scene == "Div-World1levelFour"){
-                getWorld().setBackground("brick.jpg");
                 GameRunner.goToDivWorldOneLevelFour();
             }
             else if (scene == "Div-World1levelFive"){
-                getWorld().setBackground("brick.jpg");
                 GameRunner.goToDivWorldOneLevelFive();
+            }
+            else if (scene == "Div-World1levelSix"){
+                GameRunner.goToDivWorldOneLevelSix();
+            }
+            else if (scene == "Div-World1levelSeven"){
+                GameRunner.goToDivWorldOneLevelSeven();
+            }
+            else if (scene == "Div-World1levelEight"){
+                GameRunner.goToDivWorldOneLevelEight();
+            }
+            else if (scene == "Div-World1levelNine"){
+                GameRunner.goToDivWorldOneLevelNine();
+            }
+            else if (scene == "Div-World1levelTen"){
+                GameRunner.goToDivWorldOneLevelTen();
+            }
+            else if (scene == "Div-World1levelEleven"){
+                GameRunner.goToDivWorldOneLevelEleven();
+            }
+            else if (scene == "Div-World1levelTwelve"){
+                GameRunner.goToDivWorldOneLevelTwelve();
+            }
+            
+            else if (scene == "Div-World2menu"){
+                GameRunner.goToWorldTwoDivMenu();
+            }
+            else if (scene == "Div-World2levelOne"){
+                GameRunner.goToDivWorldTwoLevelOne();
+            }
+            else if (scene == "Div-World2levelTwo"){
+                GameRunner.goToDivWorldTwoLevelTwo();
+            }
+            else if (scene == "Div-World2levelThree"){
+                GameRunner.goToDivWorldTwoLevelThree();
+            }
+            else if (scene == "Div-World2levelFour"){
+                GameRunner.goToDivWorldTwoLevelFour();
+            }
+            else if (scene == "Div-World2levelFive"){
+                GameRunner.goToDivWorldTwoLevelFive();
+            }
+            else if (scene == "Div-World2levelSix"){
+                GameRunner.goToDivWorldTwoLevelSix();
+            }
+            else if (scene == "Div-World2levelSeven"){
+                GameRunner.goToDivWorldTwoLevelSeven();
+            }
+            else if (scene == "Div-World2levelEight"){
+                GameRunner.goToMultWorldTwoLevelEight();
+            }
+            else if (scene == "Div-World2levelNine"){
+                GameRunner.goToDivWorldTwoLevelNine();
+            }
+            else if (scene == "Div-World2levelTen"){
+                GameRunner.goToDivWorldTwoLevelTen();
+            }
+            else if (scene == "Div-World2levelEleven"){
+                GameRunner.goToDivWorldTwoLevelEleven();
+            }
+            else if (scene == "Div-World2levelTwelve"){
+                GameRunner.goToDivWorldTwoLevelTwelve();
+            }
+            
+            else if (scene == "Div-World3menu"){
+                GameRunner.goToWorldThreeDivMenu();
+            }
+            else if (scene == "Div-World3levelOne"){
+                GameRunner.goToDivWorldThreeLevelOne();
+            }
+            else if (scene == "Div-World3levelTwo"){
+                GameRunner.goToDivWorldThreeLevelTwo();
+            }
+            else if (scene == "Div-World3levelThree"){
+                GameRunner.goToDivWorldThreeLevelThree();
+            }
+            else if (scene == "Div-World3levelFour"){
+                GameRunner.goToDivWorldThreeLevelFour();
+            }
+            else if (scene == "Div-World3levelFive"){
+                GameRunner.goToDivWorldThreeLevelFive();
+            }
+            else if (scene == "Div-World3levelSix"){
+                GameRunner.goToDivWorldThreeLevelSix();
+            }
+            else if (scene == "Div-World3levelSeven"){
+                GameRunner.goToDivWorldThreeLevelSeven();
+            }
+            else if (scene == "Div-World3levelEight"){
+                GameRunner.goToDivWorldThreeLevelEight();
+            }
+            else if (scene == "Div-World3levelNine"){
+                GameRunner.goToDivWorldThreeLevelNine();
+            }
+            else if (scene == "Div-World3levelTen"){
+                GameRunner.goToDivWorldThreeLevelTen();
+            }
+            else if (scene == "Div-World3levelEleven"){
+                GameRunner.goToDivWorldThreeLevelEleven();
+            }
+            else if (scene == "Div-World3levelTwelve"){
+                GameRunner.goToDivWorldThreeLevelTwelve();
+            }
+            else if (scene == "Mult-challenge"){
+                GameRunner.goToMultChallenge();
+            }
+            else if (scene == "Div-challenge"){
+                GameRunner.goToDivChallenge();
             }
         }
     }

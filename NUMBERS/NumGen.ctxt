@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=NumGen
+comment0.text=\n\ Write\ a\ description\ of\ class\ NumGen\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=NumGen()
+comment2.params=mode\ length\ bound\ x\ y
+comment2.target=int[]\ generate(java.lang.String,\ int,\ int,\ int,\ int)
+comment3.params=
+comment3.target=void\ act()
+numComments=4
