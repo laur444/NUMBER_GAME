@@ -25,7 +25,9 @@ public class TextBox extends Actor
             instScreen.fillRect(0, 0, 700, 450);
             instScreen.setColor(Color.WHITE);
             instScreen.drawString(
-            "AHHJKHJKHJKHJKHJKHJKHKHJKHJKHJKHJKKJHKJHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", 10, 25);
+            "Multiplication mode:\nYou have three tries as displayed on the top right.\nThe given question is displayed on the top.\nClick the multiplicand and the multiplier that's product is the answer seen in the question.\n(Hint: Multiplication is cummulative so the order clicked is not important.)", 10, 25);
+            instScreen.drawString(
+            "Division mode:\nYou have three tries as displayed on the top right.\nThe given question is displayed on the top.\nClick the dividend first and then the divisor that's quotient is the answer seen in the question\n(Hint: Division is not cummulative so you must pay attention to the order you click.)", 10, 100);
             setImage(instScreen);
         }
         if (key == "win"){

@@ -1,4 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import java.util.Random;
 
 /**
  * Write a description of class gameNum here.
@@ -25,9 +26,20 @@ public class GameNum extends Actor
             String file;
             file = GameRunner.currentTheme + "-" + String.valueOf(this.num) + ".png";
             setNum(file);
-        } else {
-            stringNum = String.valueOf(this.num);
-            setNum();
+        } else if (num < 100){
+            GreenfootImage image = new GreenfootImage(80, 55);
+            String file1;
+            String file2;
+            String toString = String.valueOf(this.num);
+            file1 = GameRunner.currentTheme + "-" + toString.charAt(0) + ".png";
+            file2 = GameRunner.currentTheme + "-" + toString.charAt(1) + ".png";
+            GreenfootImage image1 = new GreenfootImage(file1);
+            GreenfootImage image2 = new GreenfootImage(file2);
+            
+            image.drawImage(image1, 0, 0);
+            image.drawImage(image2, 30, 5);
+            
+            setImage(image);
         }
         
     }
@@ -137,11 +149,7 @@ public class GameNum extends Actor
                         Scene.currentWorld.removeObjects(Scene.currentWorld.getObjects(Tries.class));
                     }
                 }
-            } else if (GameRunner.gameType == "Mult-challenge"){
-                
-            } else if (GameRunner.gameType == "Div-challenge"){
-                
-            }
+            } 
         }
     }
 

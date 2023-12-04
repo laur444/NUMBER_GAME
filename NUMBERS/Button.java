@@ -163,6 +163,46 @@ public class Button extends Actor
                 GameRunner.goToMultWorldThreeLevelTwelve();
             }
             
+            else if (scene == "Mult-World4menu"){
+                GameRunner.goToWorldFourMultMenu();
+            }
+            else if (scene == "Mult-World4levelOne"){
+                GameRunner.goToMultWorldFourLevelOne();
+            }
+            else if (scene == "Mult-World4levelTwo"){
+                GameRunner.goToMultWorldFourLevelTwo();
+            }
+            else if (scene == "Mult-World4levelThree"){
+                GameRunner.goToMultWorldFourLevelThree();
+            }
+            else if (scene == "Mult-World4levelFour"){
+                GameRunner.goToMultWorldFourLevelFour();
+            }
+            else if (scene == "Mult-World4levelFive"){
+                GameRunner.goToMultWorldFourLevelFive();
+            }
+            else if (scene == "Mult-World4levelSix"){
+                GameRunner.goToMultWorldFourLevelSix();
+            }
+            else if (scene == "Mult-World4levelSeven"){
+                GameRunner.goToMultWorldFourLevelSeven();
+            }
+            else if (scene == "Mult-World4levelEight"){
+                GameRunner.goToMultWorldFourLevelEight();
+            }
+            else if (scene == "Mult-World4levelNine"){
+                GameRunner.goToMultWorldFourLevelNine();
+            }
+            else if (scene == "Mult-World4levelTen"){
+                GameRunner.goToMultWorldFourLevelTen();
+            }
+            else if (scene == "Mult-World4levelEleven"){
+                GameRunner.goToMultWorldFourLevelEleven();
+            }
+            else if (scene == "Mult-World4levelTwelve"){
+                GameRunner.goToMultWorldFourLevelTwelve();
+            }
+            
             else if (scene == "Div-World1menu"){
                 GameRunner.goToWorldOneDivMenu();
             }
@@ -281,12 +321,6 @@ public class Button extends Actor
             }
             else if (scene == "Div-World3levelTwelve"){
                 GameRunner.goToDivWorldThreeLevelTwelve();
-            }
-            else if (scene == "Mult-challenge"){
-                GameRunner.goToMultChallenge();
-            }
-            else if (scene == "Div-challenge"){
-                GameRunner.goToDivChallenge();
             }
         }
     }

@@ -1,4 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import java.util.Random;
 
 /**
  * Write a description of class GameRunner here.
@@ -28,6 +29,7 @@ public class GameRunner extends Actor
         winCondition = win;
         gameType = operator;
         tryCounter = 2;
+        GameRunner.setBg();
     }
 
     // Ends game and resets the static variables
@@ -38,6 +40,7 @@ public class GameRunner extends Actor
         GameNum.clickCounter = 0;
         winCondition = 0;
         currentArray = null;
+        Scene.currentWorld.setBackground("fingerprint.jpg");
     }
 
     public static void displayTries(){
@@ -93,6 +96,18 @@ public class GameRunner extends Actor
 
     }
 
+    public static void setBg(){
+        if (GameRunner.currentTheme == "theme1"){
+            Scene.currentWorld.setBackground("brick.jpg");
+        } else if (GameRunner.currentTheme == "theme2"){
+            Scene.currentWorld.setBackground("crumbled-paper.jpg");            
+        } else if (GameRunner.currentTheme == "theme3"){
+            Scene.currentWorld.setBackground("wet-blue.jpg");
+        } else if (GameRunner.currentTheme == "theme4"){
+            Scene.currentWorld.setBackground("space.jpg");
+        }
+    }
+    
     public static void goToMultWorldSelect(){
         Scene.currentWorld.removeObjects(Scene.currentWorld.getObjects(null));
 
@@ -102,13 +117,13 @@ public class GameRunner extends Actor
         Button worldOneButton = new Button("Mult-World1menu", "World1.png");
         Scene.currentWorld.addObject(worldOneButton, 115, 300);
         
-        Button worldTwoButton = new Button("Mult-World2menu", "World1.png");
+        Button worldTwoButton = new Button("Mult-World2menu", "World2.png");
         Scene.currentWorld.addObject(worldTwoButton, 290, 300);
         
-        Button worldThreeButton = new Button("Mult-World3menu", "World1.png");
+        Button worldThreeButton = new Button("Mult-World3menu", "World3.png");
         Scene.currentWorld.addObject(worldThreeButton, 465, 300);
         
-        Button challengeButton = new Button("Mult-challenge", "World1.png");
+        Button challengeButton = new Button("Mult-World4menu", "World4.png");
         Scene.currentWorld.addObject(challengeButton, 640, 300);
     }
 
@@ -281,20 +296,13 @@ public class GameRunner extends Actor
         Scene.currentWorld.addObject(levelTwelveStart, RightRightX, BottomY);
     }
     
-    public static void goToMultChallenge(){
-        Scene.currentWorld.removeObjects(Scene.currentWorld.getObjects(null));
-        Scene.currentWorld.setBackground("brick.jpg");
-        
-        Button backButton = new Button("Mult-WorldSelect", "backButton.png");
-        Scene.currentWorld.addObject(backButton, 50, 50);
-        
+    public static void goToWorldFourMultMenu(){
         
     }
     
     // goes to multiplication level one and starts the game
     public static void goToMultWorldOneLevelOne(){
         Scene.currentWorld.removeObjects(Scene.currentWorld.getObjects(null));
-        Scene.currentWorld.setBackground("brick.jpg");
 
         Button backButton = new Button("Mult-World1menu", "backButton.png");
         Scene.currentWorld.addObject(backButton, 50, 50);
@@ -335,7 +343,6 @@ public class GameRunner extends Actor
 
     public static void goToMultWorldOneLevelNine(){
         Scene.currentWorld.removeObjects(Scene.currentWorld.getObjects(null));
-        Scene.currentWorld.setBackground("brick.jpg");
 
         Button backButton = new Button("Mult-World1menu", "backButton.png");
         Scene.currentWorld.addObject(backButton, 50, 50);
@@ -453,7 +460,55 @@ public class GameRunner extends Actor
     public static void goToMultWorldThreeLevelTwelve(){
 
     }
+    
+    public static void goToMultWorldFourLevelOne(){
 
+    }
+
+    public static void goToMultWorldFourLevelTwo(){
+
+    }
+
+    public static void goToMultWorldFourLevelThree(){
+
+    }
+
+    public static void goToMultWorldFourLevelFour(){
+
+    }
+
+    public static void goToMultWorldFourLevelFive(){
+
+    }
+
+    public static void goToMultWorldFourLevelSix(){
+
+    }
+
+    public static void goToMultWorldFourLevelSeven(){
+
+    }
+
+    public static void goToMultWorldFourLevelEight(){
+
+    }
+
+    public static void goToMultWorldFourLevelNine(){
+
+    }
+
+    public static void goToMultWorldFourLevelTen(){
+
+    }
+
+    public static void goToMultWorldFourLevelEleven(){
+
+    }
+
+    public static void goToMultWorldFourLevelTwelve(){
+
+    }
+    
     
     public static void goToDivWorldSelect(){
         Scene.currentWorld.removeObjects(Scene.currentWorld.getObjects(null));
@@ -464,13 +519,13 @@ public class GameRunner extends Actor
         Button worldOneButton = new Button("Div-World1menu", "World1.png");
         Scene.currentWorld.addObject(worldOneButton, 115, 300);
         
-        Button worldTwoButton = new Button("Div-World2menu", "World1.png");
+        Button worldTwoButton = new Button("Div-World2menu", "World2.png");
         Scene.currentWorld.addObject(worldTwoButton, 290, 300);
         
-        Button worldThreeButton = new Button("Div-World3menu", "World1.png");
+        Button worldThreeButton = new Button("Div-World3menu", "World3.png");
         Scene.currentWorld.addObject(worldThreeButton, 465, 300);
         
-        Button challengeButton = new Button("Div-challenge", "World1.png");
+        Button challengeButton = new Button("Div-World4menu", "World4.png");
         Scene.currentWorld.addObject(challengeButton, 640, 300);
     }
 
@@ -643,14 +698,13 @@ public class GameRunner extends Actor
         Scene.currentWorld.addObject(levelTwelveStart, RightRightX, BottomY);
     }
     
-    public static void goToDivChallenge(){
+    public static void goToWorldFourDivMenu(){
         
     }
     
     // goes to division level one and starts the game
     public static void goToDivWorldOneLevelOne(){
         Scene.currentWorld.removeObjects(Scene.currentWorld.getObjects(null));
-        Scene.currentWorld.setBackground("brick.jpg");
 
         Button backButton = new Button("Div-World1menu", "backButton.png");
         Scene.currentWorld.addObject(backButton, 50, 50);
@@ -798,6 +852,54 @@ public class GameRunner extends Actor
     }
 
     public static void goToDivWorldThreeLevelTwelve(){
+
+    }
+    
+    public static void goToDivWorldFourLevelOne(){
+
+    }
+
+    public static void goToDivWorldFourLevelTwo(){
+
+    }
+
+    public static void goToDivWorldFourLevelThree(){
+
+    }
+
+    public static void goToDivWorldFourLevelFour(){
+
+    }
+
+    public static void goToDivWorldFourLevelFive(){
+
+    }
+
+    public static void goToDivWorldFourLevelSix(){
+
+    }
+
+    public static void goToDivWorldFourLevelSeven(){
+
+    }
+
+    public static void goToDivWorldFourLevelEight(){
+
+    }
+
+    public static void goToDivWorldFourLevelNine(){
+
+    }
+
+    public static void goToDivWorldFourLevelTen(){
+
+    }
+
+    public static void goToDivWorldFourLevelEleven(){
+
+    }
+
+    public static void goToDivWorldFourLevelTwelve(){
 
     }
     
