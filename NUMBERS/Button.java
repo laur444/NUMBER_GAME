@@ -322,6 +322,46 @@ public class Button extends Actor
             else if (scene == "Div-World3levelTwelve"){
                 GameRunner.goToDivWorldThreeLevelTwelve();
             }
+            
+            else if (scene == "Div-World4menu"){
+                GameRunner.goToWorldFourDivMenu();
+            }
+            else if (scene == "Div-World4levelOne"){
+                GameRunner.goToDivWorldFourLevelOne();
+            }
+            else if (scene == "Div-World4levelTwo"){
+                GameRunner.goToDivWorldFourLevelTwo();
+            }
+            else if (scene == "Div-World4levelThree"){
+                GameRunner.goToDivWorldFourLevelThree();
+            }
+            else if (scene == "Div-World4levelFour"){
+                GameRunner.goToDivWorldFourLevelFour();
+            }
+            else if (scene == "Div-World4levelFive"){
+                GameRunner.goToDivWorldFourLevelFive();
+            }
+            else if (scene == "Div-World4levelSix"){
+                GameRunner.goToDivWorldFourLevelSix();
+            }
+            else if (scene == "Div-World4levelSeven"){
+                GameRunner.goToDivWorldFourLevelSeven();
+            }
+            else if (scene == "Div-World4levelEight"){
+                GameRunner.goToDivWorldFourLevelEight();
+            }
+            else if (scene == "Div-World4levelNine"){
+                GameRunner.goToDivWorldFourLevelNine();
+            }
+            else if (scene == "Div-World4levelTen"){
+                GameRunner.goToDivWorldFourLevelTen();
+            }
+            else if (scene == "Div-World4levelEleven"){
+                GameRunner.goToDivWorldFourLevelEleven();
+            }
+            else if (scene == "Div-World4levelTwelve"){
+                GameRunner.goToDivWorldFourLevelTwelve();
+            }
         }
     }
     

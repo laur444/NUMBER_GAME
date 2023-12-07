@@ -20,14 +20,16 @@ public class TextBox extends Actor
     // value constructor that creates the instruction screen
     public TextBox(String key){
         if (key == "inst"){
-            GreenfootImage instScreen = new GreenfootImage(700, 450);
+            GreenfootImage instScreen = new GreenfootImage("inst.png");
+            Font font = new Font(25);
+            instScreen.setFont(font);
             instScreen.setColor(Color.BLACK);
-            instScreen.fillRect(0, 0, 700, 450);
-            instScreen.setColor(Color.WHITE);
             instScreen.drawString(
-            "Multiplication mode:\nYou have three tries as displayed on the top right.\nThe given question is displayed on the top.\nClick the multiplicand and the multiplier that's product is the answer seen in the question.\n(Hint: Multiplication is cummulative so the order clicked is not important.)", 10, 25);
+            "Multiplication mode:\nYou have three tries as displayed on the top right.\nThe given question is displayed on the top.\nClick the multiplicand and the multiplier that's product\n is the answer seen in the question.\n(Hint: Multiplication is cummulative so the order\n clicked is not important.)",
+            20, 40);
             instScreen.drawString(
-            "Division mode:\nYou have three tries as displayed on the top right.\nThe given question is displayed on the top.\nClick the dividend first and then the divisor that's quotient is the answer seen in the question\n(Hint: Division is not cummulative so you must pay attention to the order you click.)", 10, 100);
+            "Division mode:\nYou have three tries as displayed on the top right.\nThe given question is displayed on the top.\nClick the dividend first and then the divisor\n that's quotient is the answer seen in the question\n(Hint: Division is not cummulative so you must pay\n attention to the order you click.)",
+            20, 250);
             setImage(instScreen);
         }
         if (key == "win"){
@@ -62,15 +64,18 @@ public class TextBox extends Actor
     
     // creates the image and draw the correct question for the level
     public void setBar(){
-        GreenfootImage questionBar = new GreenfootImage(width, height);
+        GreenfootImage questionBar = new GreenfootImage("qbar.png");
         questionBar.setColor(Color.BLACK);
-        questionBar.fillRect(0, 0, width, height);
-        questionBar.setColor(Color.WHITE);
+        Font font = new Font(15);
+        questionBar.setFont(font);
+        
         if (GameRunner.gameType == "mult"){
-                questionBar.drawString("What two numbers multiply to get " + GameRunner.winCondition, 25, 25);
+                questionBar.drawString("What two numbers multiply to get " + GameRunner.winCondition,
+                30, 50);
             }
             else if (GameRunner.gameType == "div"){
-                questionBar.drawString("What two numbers divide to get " + GameRunner.winCondition, 25, 25);
+                questionBar.drawString("What two numbers divide to get " + GameRunner.winCondition,
+                30, 50);
             }
         setImage(questionBar);
     }

@@ -145,6 +145,8 @@ public class GameNum extends Actor
                 }
                 else if (clickCounter == 2 && GameRunner.gameQuotient == GameRunner.winCondition){
                     Scene.currentWorld.removeObjects(Scene.currentWorld.getObjects(GameNum.class));
+                    GameRunner.points += GameRunner.pvalue;
+                    
                     TextBox winScreen = new TextBox("win");
                     Scene.currentWorld.addObject(winScreen, 375, 345);
                     GameRunner.gameStop();
@@ -156,6 +158,7 @@ public class GameNum extends Actor
                         GameRunner.displayTries();
                         clickCounter = 0;
                         GameRunner.gameQuotient = 1;
+                        GameRunner.pvalue = (double)((int)(GameRunner.pvalue * 0.85));
                         Scene.currentWorld.removeObjects(Scene.currentWorld.getObjects(GameNum.class));
                         if (GameRunner.currentArray.length == 9){
                             GameRunner.createThreeByThree(GameRunner.currentArray);

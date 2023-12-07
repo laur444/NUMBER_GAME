@@ -44,7 +44,7 @@ public class GameRunner extends Actor
         GameNum.clickCounter = 0;
         winCondition = 0;
         currentArray = null;
-        Scene.currentWorld.setBackground("fingerprint.jpg");
+        Scene.currentWorld.setBackground("NUMSUMS.png");
         if (points >= 100.0){
             Scene.currentWorld.removeObjects(Scene.currentWorld.getObjects(null));
             
@@ -81,7 +81,7 @@ public class GameRunner extends Actor
         int divButtonX = 550;
 
         Scene.currentWorld.removeObjects(Scene.currentWorld.getObjects(null));
-        Scene.currentWorld.setBackground("fingerprint.jpg");
+        Scene.currentWorld.setBackground("NUMSUMS.png");
         
         Button multPlayButton = new Button("Mult-WorldSelect", "MultStart.png");
         Scene.currentWorld.addObject(multPlayButton, multButtonX, ButtonY);
@@ -98,7 +98,7 @@ public class GameRunner extends Actor
         Scene.currentWorld.removeObjects(Scene.currentWorld.getObjects(null));
 
         TextBox instBar = new TextBox("inst");
-        Scene.currentWorld.addObject(instBar, 375, 315);
+        Scene.currentWorld.addObject(instBar, 375, 325);
 
         Button backButton = new Button("start", "backButton.png");
         Scene.currentWorld.addObject(backButton, 80, 50);
@@ -1288,35 +1288,107 @@ public class GameRunner extends Actor
     }
 
     public static void goToDivWorldOneLevelFive(){
+        Scene.currentWorld.removeObjects(Scene.currentWorld.getObjects(null));
+        GameRunner.pvalue = 12.5;
+        
+        Button backButton = new Button("Div-World1menu", "backButton.png");
+        Scene.currentWorld.addObject(backButton, 80, 50);
 
+        GameRunner.gameStart(6, "div");
+        GameRunner.displayTries();
+        GameRunner.currentArray = NumGen.generate("div", 16, 20, 18, 3);
+        createFourByFour(GameRunner.currentArray);
     }
 
     public static void goToDivWorldOneLevelSix(){
+        Scene.currentWorld.removeObjects(Scene.currentWorld.getObjects(null));
+        GameRunner.pvalue = 12.5;
+        
+        Button backButton = new Button("Div-World1menu", "backButton.png");
+        Scene.currentWorld.addObject(backButton, 80, 50);
 
+        GameRunner.gameStart(12, "div");
+        GameRunner.displayTries();
+        GameRunner.currentArray = NumGen.generate("div", 16, 25, 24, 2);
+        createFourByFour(GameRunner.currentArray);
     }
 
     public static void goToDivWorldOneLevelSeven(){
+        Scene.currentWorld.removeObjects(Scene.currentWorld.getObjects(null));
+        GameRunner.pvalue = 12.5;
+        
+        Button backButton = new Button("Div-World1menu", "backButton.png");
+        Scene.currentWorld.addObject(backButton, 80, 50);
 
+        GameRunner.gameStart(13, "div");
+        GameRunner.displayTries();
+        GameRunner.currentArray = NumGen.generate("div", 16, 40, 34, 3);
+        createFourByFour(GameRunner.currentArray);
     }
 
     public static void goToDivWorldOneLevelEight(){
+        Scene.currentWorld.removeObjects(Scene.currentWorld.getObjects(null));
+        GameRunner.pvalue = 12.5;
+        
+        Button backButton = new Button("Div-World1menu", "backButton.png");
+        Scene.currentWorld.addObject(backButton, 80, 50);
 
+        GameRunner.gameStart(15, "div");
+        GameRunner.displayTries();
+        GameRunner.currentArray = NumGen.generate("div", 16, 50, 45, 3);
+        createFourByFour(GameRunner.currentArray);
     }
 
     public static void goToDivWorldOneLevelNine(){
+        Scene.currentWorld.removeObjects(Scene.currentWorld.getObjects(null));
+        GameRunner.pvalue = 25.0;
         
+        Button backButton = new Button("Div-World1menu", "backButton.png");
+        Scene.currentWorld.addObject(backButton, 80, 50);
+
+        GameRunner.gameStart(26, "div");
+        GameRunner.displayTries();
+        GameRunner.currentArray = NumGen.generate("div", 36, 60, 52, 2);
+        createSixBySix(GameRunner.currentArray);
     }
 
     public static void goToDivWorldOneLevelTen(){
+        Scene.currentWorld.removeObjects(Scene.currentWorld.getObjects(null));
+        GameRunner.pvalue = 25.0;
+        
+        Button backButton = new Button("Div-World1menu", "backButton.png");
+        Scene.currentWorld.addObject(backButton, 80, 50);
 
+        GameRunner.gameStart(5, "div");
+        GameRunner.displayTries();
+        GameRunner.currentArray = NumGen.generate("div", 36, 75, 75, 15);
+        createSixBySix(GameRunner.currentArray);
     }
 
     public static void goToDivWorldOneLevelEleven(){
+        Scene.currentWorld.removeObjects(Scene.currentWorld.getObjects(null));
+        GameRunner.pvalue = 25.0;
+        
+        Button backButton = new Button("Div-World1menu", "backButton.png");
+        Scene.currentWorld.addObject(backButton, 80, 50);
 
+        GameRunner.gameStart(9, "div");
+        GameRunner.displayTries();
+        GameRunner.currentArray = NumGen.generate("div", 36, 100, 99, 11);
+        createSixBySix(GameRunner.currentArray);
     }
 
     public static void goToDivWorldOneLevelTwelve(){
+        Scene.currentWorld.removeObjects(Scene.currentWorld.getObjects(null));
+        GameRunner.pvalue = 25.0;
+        
+        Button backButton = new Button("Div-World1menu", "backButton.png");
+        Scene.currentWorld.addObject(backButton, 80, 50);
 
+        GameRunner.gameStart(10, "div");
+        GameRunner.displayTries();
+        GameRunner.currentArray = NumGen.generate("div", 36, 100, 100, 10);
+        createSixBySix(GameRunner.currentArray);
     }
 
     public static void goToDivWorldTwoLevelOne(){
@@ -1372,35 +1444,107 @@ public class GameRunner extends Actor
     }
 
     public static void goToDivWorldTwoLevelFive(){
+        Scene.currentWorld.removeObjects(Scene.currentWorld.getObjects(null));
+        GameRunner.pvalue = 12.5;
+        
+        Button backButton = new Button("Div-World2menu", "backButton.png");
+        Scene.currentWorld.addObject(backButton, 80, 50);
 
+        GameRunner.gameStart(8, "div");
+        GameRunner.displayTries();
+        GameRunner.currentArray = NumGen.generate("div", 16, 40, 32, 4);
+        createFourByFour(GameRunner.currentArray);
     }
 
     public static void goToDivWorldTwoLevelSix(){
+        Scene.currentWorld.removeObjects(Scene.currentWorld.getObjects(null));
+        GameRunner.pvalue = 12.5;
+        
+        Button backButton = new Button("Div-World2menu", "backButton.png");
+        Scene.currentWorld.addObject(backButton, 80, 50);
 
+        GameRunner.gameStart(11, "div");
+        GameRunner.displayTries();
+        GameRunner.currentArray = NumGen.generate("div", 16, 50, 44, 4);
+        createFourByFour(GameRunner.currentArray);
     }
 
     public static void goToDivWorldTwoLevelSeven(){
+        Scene.currentWorld.removeObjects(Scene.currentWorld.getObjects(null));
+        GameRunner.pvalue = 12.5;
+        
+        Button backButton = new Button("Div-World2menu", "backButton.png");
+        Scene.currentWorld.addObject(backButton, 80, 50);
 
+        GameRunner.gameStart(5, "div");
+        GameRunner.displayTries();
+        GameRunner.currentArray = NumGen.generate("div", 16, 40, 35, 7);
+        createFourByFour(GameRunner.currentArray);
     }
 
     public static void goToDivWorldTwoLevelEight(){
+        Scene.currentWorld.removeObjects(Scene.currentWorld.getObjects(null));
+        GameRunner.pvalue = 12.5;
+        
+        Button backButton = new Button("Div-World2menu", "backButton.png");
+        Scene.currentWorld.addObject(backButton, 80, 50);
 
+        GameRunner.gameStart(6, "div");
+        GameRunner.displayTries();
+        GameRunner.currentArray = NumGen.generate("div", 16, 50, 48, 8);
+        createFourByFour(GameRunner.currentArray);
     }
 
     public static void goToDivWorldTwoLevelNine(){
+        Scene.currentWorld.removeObjects(Scene.currentWorld.getObjects(null));
+        GameRunner.pvalue = 25.0;
+        
+        Button backButton = new Button("Div-World2menu", "backButton.png");
+        Scene.currentWorld.addObject(backButton, 80, 50);
 
+        GameRunner.gameStart(14, "div");
+        GameRunner.displayTries();
+        GameRunner.currentArray = NumGen.generate("div", 36, 60, 56, 4);
+        createSixBySix(GameRunner.currentArray);
     }
 
     public static void goToDivWorldTwoLevelTen(){
+        Scene.currentWorld.removeObjects(Scene.currentWorld.getObjects(null));
+        GameRunner.pvalue = 25.0;
+        
+        Button backButton = new Button("Div-World2menu", "backButton.png");
+        Scene.currentWorld.addObject(backButton, 80, 50);
 
+        GameRunner.gameStart(37, "div");
+        GameRunner.displayTries();
+        GameRunner.currentArray = NumGen.generate("div", 36, 75, 74, 2);
+        createSixBySix(GameRunner.currentArray);
     }
 
     public static void goToDivWorldTwoLevelEleven(){
+        Scene.currentWorld.removeObjects(Scene.currentWorld.getObjects(null));
+        GameRunner.pvalue = 25.0;
+        
+        Button backButton = new Button("Div-World2menu", "backButton.png");
+        Scene.currentWorld.addObject(backButton, 80, 50);
 
+        GameRunner.gameStart(20, "div");
+        GameRunner.displayTries();
+        GameRunner.currentArray = NumGen.generate("div", 36, 90, 80, 4);
+        createSixBySix(GameRunner.currentArray);
     }
 
     public static void goToDivWorldTwoLevelTwelve(){
+        Scene.currentWorld.removeObjects(Scene.currentWorld.getObjects(null));
+        GameRunner.pvalue = 25.0;
+        
+        Button backButton = new Button("Div-World2menu", "backButton.png");
+        Scene.currentWorld.addObject(backButton, 80, 50);
 
+        GameRunner.gameStart(13, "div");
+        GameRunner.displayTries();
+        GameRunner.currentArray = NumGen.generate("div", 36, 85, 78, 6);
+        createSixBySix(GameRunner.currentArray);
     }
 
     public static void goToDivWorldThreeLevelOne(){
@@ -1456,35 +1600,107 @@ public class GameRunner extends Actor
     }
 
     public static void goToDivWorldThreeLevelFive(){
+        Scene.currentWorld.removeObjects(Scene.currentWorld.getObjects(null));
+        GameRunner.pvalue = 12.5;
+        
+        Button backButton = new Button("Div-World3menu", "backButton.png");
+        Scene.currentWorld.addObject(backButton, 80, 50);
 
+        GameRunner.gameStart(9, "div");
+        GameRunner.displayTries();
+        GameRunner.currentArray = NumGen.generate("div", 16, 30, 27, 3);
+        createFourByFour(GameRunner.currentArray);
     }
 
     public static void goToDivWorldThreeLevelSix(){
+        Scene.currentWorld.removeObjects(Scene.currentWorld.getObjects(null));
+        GameRunner.pvalue = 12.5;
+        
+        Button backButton = new Button("Div-World3menu", "backButton.png");
+        Scene.currentWorld.addObject(backButton, 80, 50);
 
+        GameRunner.gameStart(12, "div");
+        GameRunner.displayTries();
+        GameRunner.currentArray = NumGen.generate("div", 16, 50, 48, 4);
+        createFourByFour(GameRunner.currentArray);
     }
 
     public static void goToDivWorldThreeLevelSeven(){
+        Scene.currentWorld.removeObjects(Scene.currentWorld.getObjects(null));
+        GameRunner.pvalue = 12.5;
+        
+        Button backButton = new Button("Div-World3menu", "backButton.png");
+        Scene.currentWorld.addObject(backButton, 80, 50);
 
+        GameRunner.gameStart(10, "div");
+        GameRunner.displayTries();
+        GameRunner.currentArray = NumGen.generate("div", 16, 50, 50, 5);
+        createFourByFour(GameRunner.currentArray);
     }
 
     public static void goToDivWorldThreeLevelEight(){
+        Scene.currentWorld.removeObjects(Scene.currentWorld.getObjects(null));
+        GameRunner.pvalue = 12.5;
+        
+        Button backButton = new Button("Div-World3menu", "backButton.png");
+        Scene.currentWorld.addObject(backButton, 80, 50);
 
+        GameRunner.gameStart(23, "div");
+        GameRunner.displayTries();
+        GameRunner.currentArray = NumGen.generate("div", 16, 50, 46, 2);
+        createFourByFour(GameRunner.currentArray);
     }
 
     public static void goToDivWorldThreeLevelNine(){
+        Scene.currentWorld.removeObjects(Scene.currentWorld.getObjects(null));
+        GameRunner.pvalue = 25.0;
+        
+        Button backButton = new Button("Div-World3menu", "backButton.png");
+        Scene.currentWorld.addObject(backButton, 80, 50);
 
+        GameRunner.gameStart(16, "div");
+        GameRunner.displayTries();
+        GameRunner.currentArray = NumGen.generate("div", 36, 75, 64, 4);
+        createSixBySix(GameRunner.currentArray);
     }
 
     public static void goToDivWorldThreeLevelTen(){
+        Scene.currentWorld.removeObjects(Scene.currentWorld.getObjects(null));
+        GameRunner.pvalue = 25.0;
+        
+        Button backButton = new Button("Div-World3menu", "backButton.png");
+        Scene.currentWorld.addObject(backButton, 80, 50);
 
+        GameRunner.gameStart(8, "div");
+        GameRunner.displayTries();
+        GameRunner.currentArray = NumGen.generate("div", 36, 90, 80, 10);
+        createSixBySix(GameRunner.currentArray);
     }
 
     public static void goToDivWorldThreeLevelEleven(){
+        Scene.currentWorld.removeObjects(Scene.currentWorld.getObjects(null));
+        GameRunner.pvalue = 25.0;
+        
+        Button backButton = new Button("Div-World3menu", "backButton.png");
+        Scene.currentWorld.addObject(backButton, 80, 50);
 
+        GameRunner.gameStart(19, "div");
+        GameRunner.displayTries();
+        GameRunner.currentArray = NumGen.generate("div", 36, 85, 76, 4);
+        createSixBySix(GameRunner.currentArray);
     }
 
     public static void goToDivWorldThreeLevelTwelve(){
+        Scene.currentWorld.removeObjects(Scene.currentWorld.getObjects(null));
+        GameRunner.pvalue = 25.0;
+        
+        Button backButton = new Button("Div-World3menu", "backButton.png");
+        Scene.currentWorld.addObject(backButton, 80, 50);
 
+        GameRunner.gameStart(22, "div");
+        GameRunner.displayTries();
+        GameRunner.currentArray = NumGen.generate("div", 36, 95, 88, 4);
+        createSixBySix(GameRunner.currentArray);
     }
     
     public static void goToDivWorldFourLevelOne(){
@@ -1540,35 +1756,107 @@ public class GameRunner extends Actor
     }
 
     public static void goToDivWorldFourLevelFive(){
+        Scene.currentWorld.removeObjects(Scene.currentWorld.getObjects(null));
+        GameRunner.pvalue = 12.5;
+        
+        Button backButton = new Button("Div-World4menu", "backButton.png");
+        Scene.currentWorld.addObject(backButton, 80, 50);
 
+        GameRunner.gameStart(7, "div");
+        GameRunner.displayTries();
+        GameRunner.currentArray = NumGen.generate("div", 16, 30, 28, 4);
+        createFourByFour(GameRunner.currentArray);
     }
 
     public static void goToDivWorldFourLevelSix(){
+        Scene.currentWorld.removeObjects(Scene.currentWorld.getObjects(null));
+        GameRunner.pvalue = 12.5;
+        
+        Button backButton = new Button("Div-World4menu", "backButton.png");
+        Scene.currentWorld.addObject(backButton, 80, 50);
 
+        GameRunner.gameStart(7, "div");
+        GameRunner.displayTries();
+        GameRunner.currentArray = NumGen.generate("div", 16, 45, 42, 6);
+        createFourByFour(GameRunner.currentArray);
     }
 
     public static void goToDivWorldFourLevelSeven(){
+        Scene.currentWorld.removeObjects(Scene.currentWorld.getObjects(null));
+        GameRunner.pvalue = 12.5;
+        
+        Button backButton = new Button("Div-World4menu", "backButton.png");
+        Scene.currentWorld.addObject(backButton, 80, 50);
 
+        GameRunner.gameStart(11, "div");
+        GameRunner.displayTries();
+        GameRunner.currentArray = NumGen.generate("div", 16, 20, 44, 4);
+        createFourByFour(GameRunner.currentArray);
     }
 
     public static void goToDivWorldFourLevelEight(){
+        Scene.currentWorld.removeObjects(Scene.currentWorld.getObjects(null));
+        GameRunner.pvalue = 12.5;
+        
+        Button backButton = new Button("Div-World4menu", "backButton.png");
+        Scene.currentWorld.addObject(backButton, 80, 50);
 
+        GameRunner.gameStart(7, "div");
+        GameRunner.displayTries();
+        GameRunner.currentArray = NumGen.generate("div", 16, 50, 49, 7);
+        createFourByFour(GameRunner.currentArray);
     }
 
     public static void goToDivWorldFourLevelNine(){
+        Scene.currentWorld.removeObjects(Scene.currentWorld.getObjects(null));
+        GameRunner.pvalue = 25.0;
+        
+        Button backButton = new Button("Div-World4menu", "backButton.png");
+        Scene.currentWorld.addObject(backButton, 80, 50);
 
+        GameRunner.gameStart(33, "div");
+        GameRunner.displayTries();
+        GameRunner.currentArray = NumGen.generate("div", 36, 100, 99, 3);
+        createSixBySix(GameRunner.currentArray);
     }
 
     public static void goToDivWorldFourLevelTen(){
+        Scene.currentWorld.removeObjects(Scene.currentWorld.getObjects(null));
+        GameRunner.pvalue = 25.0;
+        
+        Button backButton = new Button("Div-World4menu", "backButton.png");
+        Scene.currentWorld.addObject(backButton, 80, 50);
 
+        GameRunner.gameStart(9, "div");
+        GameRunner.displayTries();
+        GameRunner.currentArray = NumGen.generate("div", 36, 90, 81, 9);
+        createSixBySix(GameRunner.currentArray);
     }
 
     public static void goToDivWorldFourLevelEleven(){
+        Scene.currentWorld.removeObjects(Scene.currentWorld.getObjects(null));
+        GameRunner.pvalue = 25.0;
+        
+        Button backButton = new Button("Div-World4menu", "backButton.png");
+        Scene.currentWorld.addObject(backButton, 80, 50);
 
+        GameRunner.gameStart(19, "div");
+        GameRunner.displayTries();
+        GameRunner.currentArray = NumGen.generate("div", 36, 100, 95, 5);
+        createSixBySix(GameRunner.currentArray);
     }
 
     public static void goToDivWorldFourLevelTwelve(){
+        Scene.currentWorld.removeObjects(Scene.currentWorld.getObjects(null));
+        GameRunner.pvalue = 25.0;
+        
+        Button backButton = new Button("Div-World4menu", "backButton.png");
+        Scene.currentWorld.addObject(backButton, 80, 50);
 
+        GameRunner.gameStart(4, "div");
+        GameRunner.displayTries();
+        GameRunner.currentArray = NumGen.generate("div", 36, 90, 84, 21);
+        createSixBySix(GameRunner.currentArray);
     }
     
     // creates a question bar for the level
@@ -1846,6 +2134,7 @@ public class GameRunner extends Actor
         Scene.currentWorld.addObject(Q4RB, Q14RightX, Q34BottomY);
         
     }
+    
     
     public void act(){
 
