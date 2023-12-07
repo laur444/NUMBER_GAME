@@ -28,6 +28,7 @@ public class Scene extends World
      */
     private void prepare()
     {
+        
         GameNum.clickCounter = 0;
         GameRunner gameRunner = new GameRunner();
         addObject(gameRunner, -100, -100);

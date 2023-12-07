@@ -31,22 +31,32 @@ public class TextBox extends Actor
             setImage(instScreen);
         }
         if (key == "win"){
-            GreenfootImage winScreen = new GreenfootImage(600,500);
-            winScreen.setColor(Color.BLACK);
-            winScreen.fillRect(0, 0, 600, 500);
-            winScreen.setColor(Color.YELLOW);
-            winScreen.drawString("Winner", 10, 25);
-            winScreen.drawString(Integer.toString(GameRunner.tryCounter + 1) + "/3", 10, 35);
+            GreenfootImage winScreen = new GreenfootImage("winloss.png");
+            Font font = new Font(75);
+            winScreen.setFont(font);
+            winScreen.drawString("Victory!", 60, 190);
+            winScreen.drawString("+" + GameRunner.pvalue, 60, 318);
+            Font font1 = new Font(28);
+            winScreen.setFont(font1);
+            winScreen.drawString("Current Points: " + Double.toString(GameRunner.points), 65, 415);
+            
+            
             setImage(winScreen);
+            
         }
         if (key == "loss"){
-            GreenfootImage lossScreen = new GreenfootImage(600,500);
-            lossScreen.setColor(Color.BLACK);
-            lossScreen.fillRect(0, 0, 600, 500);
-            lossScreen.setColor(Color.RED);
-            lossScreen.drawString("You lost try again!", 10, 25);
+            GreenfootImage winScreen = new GreenfootImage("winloss.png");
+            Font font = new Font(65);
+            winScreen.setFont(font);
+            winScreen.drawString("Try Again!", 60, 190);
+            winScreen.drawString("-10", 60, 318);
+            Font font1 = new Font(28);
+            winScreen.setFont(font1);
+            winScreen.drawString("Current Points: " + Double.toString(GameRunner.points), 65, 415);
             
-            setImage(lossScreen);
+            
+            setImage(winScreen);
+            
         }
     }
     
