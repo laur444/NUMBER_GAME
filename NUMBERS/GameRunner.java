@@ -1,6 +1,6 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.Random;
-
+import java.io.IOException;
 
 /**
  * Write a description of class GameRunner here.
@@ -20,7 +20,7 @@ public class GameRunner extends Actor
     static String currentTheme;
     static double points = 0.0;
     static double pvalue;
-    
+    static ProjectComm comm;
 
     //empty default constructor
     public GameRunner(){
@@ -47,7 +47,12 @@ public class GameRunner extends Actor
         Scene.currentWorld.setBackground("NUMSUMS.png");
         if (points >= 100.0){
             Scene.currentWorld.removeObjects(Scene.currentWorld.getObjects(null));
-            
+            try{
+            comm = new ProjectComm("zelda");
+            comm.sendCommand("");
+        } catch(IOException ioe){
+            System.out.println(ioe);
+        }
         }
     }
 
